@@ -11,7 +11,8 @@ add_subdirectory(thirdParty)
 add_executable(snakeGame main.cpp)
 
 target_link_libraries(${PROJECT_NAME}
-        PRIVATE ftxui::screen
-        PRIVATE ftxui::dom
-        PRIVATE ftxui::component  # Not needed for this example.
+    PRIVATE
+    ftxui::screen
+    ftxui::dom
+    ftxui::component  # Not needed for this example.
 )
